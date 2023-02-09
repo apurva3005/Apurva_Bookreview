@@ -1,0 +1,156 @@
+  .d1{
+  background-image: url("book.jpg");
+  width:100%;
+  height:100%;
+  margin-left:0px;
+  margin-top: 0px;
+  margin-right:0px;  }
+  .btn1{
+    width: 500px;
+    height:40px;
+  }
+  .d6{
+    background-color: violet;
+  width:100%;
+  height: 100%;
+  }
+  #root {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+.d4{
+  background-image: url("book3.jpg");
+  width:100%;
+  height: 100%;
+
+}  
+.d5{
+  text-align: center;
+  font-size: 24ptr;
+}
+  .d2{
+    text-align: center;
+  }
+.d3{background-image: url("book.jpg");
+  width:100%;
+  height:10%;
+  margin-left:0px;
+  margin-top: 0px;
+margin-right:0px;  
+}
+.h6{
+  margin-left:10px;
+}
+.breadcrumb{
+  background-color: transparent;
+}
+.a{
+  color: blanchedalmond;
+}
+ 
+   .d7{
+     margin-top: 13px;
+   }
+   .d9{
+    background-color: transparent;
+   }
+
+  
+  .d8{
+  background-color:blanchedalmond;
+      width:100%;
+      height:10%;
+      margin-left:0px;
+      margin-top: 0px;
+    margin-right:0px;  
+    
+  }
+  
+  
+    .c1{
+      background-color: rgba(71, 23, 5, 0.918);
+      color:white;
+
+
+    }
+    .c2{
+      font-size: 36ptr;
+    }
+.fa{
+  color:blanchedalmond;
+  
+  font-size:1.25em;
+}
+  
+  .social{
+    display:inline-block;
+  }
+
+  
+  .star-rating {
+    line-height:32px;
+    font-size:2.00em;
+  }
+  
+ 
+  
+   
+  .d10{
+    background-image: url("book.jpg");
+  width:100%;
+  height:13%;
+
+  }
+    .right {
+      position: absolute;
+      right:400px;
+      
+  }
+  .right1 {
+    position: absolute;
+    right:330px;}
+
+   .carousel-caption{
+     margin-bottom: 200px;
+   } 
+  
+  .h1{
+    float: left;
+    color:blanchedalmond;
+    margin-left: 0px;
+    font-style: italic;
+    font-family: cursive;
+  }
+  .h2{
+    color:blanchedalmond;
+    
+    font-style: italic;
+    font-family: cursive;
+  }
+  x-star-rating {
+    font-family: 'Ionicons';
+    font-size: 28px;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+x-star-rating > .star::after {
+    content: '\f4b2';
+    color: #777;
+}
+
+x-star-rating > .star.full::after {
+    content: '\f4b3';
+    color: #fd0;
+}
+  .h4{
+    color:whitesmoke;
+    margin-left: 10px;
+  }
+  .center{
+      margin: auto;
+      width: 50%;
+      
+      padding: 10px;
+  }
+  

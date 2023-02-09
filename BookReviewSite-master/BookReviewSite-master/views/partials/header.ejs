@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,800" rel="stylesheet"> 
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://cdn.ckeditor.com/ckeditor5/11.1.0/classic/ckeditor.js"></script>    
+    <title>Booky</title>
+</head>
+<body>
+    <div class="ui container">
+        <div class="ui secondary  menu" id="navbar">
+            <a class="item nav-item" href="/books" id="nav-head">
+                Home
+            </a>
+            <a class="item nav-item" href="/books/search">
+                Find A Book
+            </a>
+            <div class="right menu nav-item">
+                <% if(!currentUser){ %>
+                    <a class="ui item" href="/login">
+                        Login
+                    </a>
+                    <a class="ui item" href="/register">
+                        Signup
+                    </a>
+                <% }else{ %>
+                    <a class="ui item" href="/logout">
+                        Logout
+                    </a>
+                <% } %>
+            </div>
+        </div>
+    </div>
+    <div class="ui container">
+        <% if(success && success.length > 0) { %>
+            <div class="ui green message">
+                <%= success %>
+            </div>
+        <% } %>
+        <% if(error && error.length > 0) { %>
+            <div class="ui red message">
+                <%= error %>
+            </div>
+        <% } %>
+    </div>
+    <div class="ui container">

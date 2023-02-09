@@ -1,0 +1,20 @@
+<% include ../partials/header %>
+
+<br>
+<form class="ui form" action="/books/create" method="POST">
+    <div class="disabled field">
+        <label>Book Name</label>
+        <input type="text" placeholder="Name" name="book[name]" value="<%= bookName %>">
+    </div>
+    <div class="disabled field">
+        <label>Book Image</label>
+        <input type="text" placeholder="Image" name="book[image]" value="<%= bookImage %>">
+    </div>
+    <div class="field">
+            <label>Review</label>
+            <textarea name="book[review]" id="editor"></textarea>
+    </div>
+    <button class="ui button" type="submit" id="new-review-button">Submit</button>
+</form>
+
+<% include ../partials/footer %>

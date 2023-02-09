@@ -1,0 +1,42 @@
+<% include ../partials/header %>
+
+
+<div class="ui grid">
+    <div class="sixteen wide column">
+        <div class="center">
+            <img class="ui large bordered rounded image" id="show-page-image" src="<%= book.image %>" alt="Book image">
+        </div>        
+        <div class="ui container" id="bottom-margin-show-page">
+            <h1><%= book.name %></h1>
+            <div id="review"><%= book.review %></div>
+            <div class="ui divider"></div>
+                <% if(currentUser && book.author.id.equals(currentUser._id)){ %>
+                <a href="/books/<%= book._id %>/edit" style=" color: black">
+                    <div class="ui teal segment">
+                        Edit                        
+                    </div>
+                </a>
+                <form class="ui red segment" action="/books/<%= book._id %>?_method=DELETE" method="POST">
+                    <button style="background:none; border:none; cursor: pointer; padding-left: 0px">Delete</button>
+                </form>
+                <% }else { %>
+                    <p style="font-style: italic">Created by <b><%= book.author.username %></b></p>
+                <% } %>
+        </div>
+        
+        <div class="ui segment">
+            <a href="/books/<%= book._id %>/comments/new" class="ui button">Add a comment</a>
+            <div class="ui divider"></div>
+            <% book.comments.forEach(function(comment){ %>
+                <p>
+                    <%= comment.content %>
+                </p>
+            <% }); %>
+        </div>        
+    </div>
+</div>
+<script>
+    let review = document.getElementById("review");
+    
+</script>
+<% include ../partials/footer %>

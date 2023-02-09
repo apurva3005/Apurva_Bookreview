@@ -1,0 +1,50 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+*{
+    /* font-family: 'Open Sans', sans-serif; */
+}
+#results{
+    margin-top: 25px;
+}
+#bottom-margin-show-page{
+    margin-bottom: 14px;
+}
+.form{
+    width: 40%;
+    margin: 0 auto;
+}
+#search-div{
+    padding: 10px;
+}
+#search-form{
+    margin-top: 1em;
+}
+#search-button{
+    display: inline;
+    margin-left: 0.6em;
+    color: #808080;
+}
+#show-page-image{
+    padding: 20px;
+    margin: 0 auto;
+}
+#review{
+    font-size: 1.2em;
+    line-height: 1.8em;
+    text-align: justify;
+}
+#navbar{
+    font-size: 17px;
+}
+#nav-head{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+#jumbotron{
+    height: 200px;
+}
+#jumbo-msg{
+    font-size: 3em;
+}

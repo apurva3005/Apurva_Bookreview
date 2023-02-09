@@ -1,0 +1,28 @@
+<% include ../partials/header %>
+
+<div class="ui message" id="jumbotron">
+  <h1 class="ui header" id="jumbo-msg">Welcome to Iread</h1>
+  <div class="ui divider"></div>
+  <p style="font-size: 1.2em">This is a simple book review site. You can view book reviews and even create your own! </p>
+  <a class="ui standard basic button" href="/books/search">Search Books &raquo;</a>
+  </div>
+  <div class="ui link cards grid">
+    <% books.forEach(function(book) { %>    
+      <span class="card three wide column">
+        <a class="image" href="/books/<%= book._id %>">
+          <img src="<%= book.image %>">
+        </a>
+        <div class="content">
+          <a class="header" href="/books/<%= book._id %>"><%= book.name %></a>
+          <div class="meta">
+            <a href="/books/<%= book._id %>"><%= book.writer %></a>
+          </div>
+          <div class="description">
+            <%= book.review.substring(0, 20) + '...'%>
+          </div>
+        </div>
+      </span>    
+    <% }); %>
+  </div>
+
+<% include ../partials/footer %>
